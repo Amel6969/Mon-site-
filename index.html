@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page personnelle d'Amel</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #202124;
+      line-height: 1.6;
+    }
+    header, footer {
+      text-align: center;
+      padding: 16px;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 16px 32px;
+    }
+    section {
+      background: #ffffff;
+      border: 1px solid #e0e4eb;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-bottom: 16px;
+    }
+    h1, h2 { margin: 0 0 8px; }
+    article {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      align-items: center;
+    }
+    ul { margin: 8px 0 0 18px; }
+    a { color: #0b63ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    figure { margin: 0; }
+    figure img { display: block; width: 100%; height: auto; border-radius: 6px; }
+    footer { font-size: 0.9rem; color: #5f6368; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bonjour, je suis Amel</h1>
+    <p>&Eacute;tudiante en CSI3540. Ceci est ma page web toute simple en HTML.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="intro-titre">
+      <h2 id="intro-titre">A propos</h2>
+      <article>
+        <div>
+          <p>J'apprends le d&eacute;veloppement web pas &agrave; pas. Cette page est faite seulement avec du HTML.</p>
+          <p>Je veux rester claire, partager ce que j'apprends et garder une mise en page facile &agrave; lire.</p>
+        </div>
+        <figure aria-label="Photo de code HTML">
+          <img src="https://www.geekjunior.fr/wp-content/uploads/2017/02/html-code.jpg"
+               alt="Photo d'un &eacute;cran affichant du code HTML.">
+        </figure>
+      </article>
+    </section>
+
+    <section aria-labelledby="liste-titre">
+      <h2 id="liste-titre">Ce que j'aime en ce moment</h2>
+      <ul>
+        <li>&Eacute;crire du HTML simple.</li>
+        <li>Comprendre les bases avant d'ajouter du style.</li>
+        <li>Mettre ma page en ligne.</li>
+        <li>Lire la documentation MDN.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="lien-titre">
+      <h2 id="lien-titre">Lien utile</h2>
+      <p>
+        Pour en savoir plus sur le HTML, je consulte la
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" rel="noopener">
+          documentation MDN
+        </a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Page en HTML simple. Derniere mise a jour : 28 janvier 2026.
+  </footer>
+</body>
+</html>
